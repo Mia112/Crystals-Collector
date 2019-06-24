@@ -1,46 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+                integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+                crossorigin="anonymous">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
+
 <body>
-        <div class="jumbotron">
-                <h1 class="display-4">Crystal Game</h1>
+        <header>
+         <h1 class="display-4">Crystal Game</h1>
+
+        </header>
+        <div class="container">
                 <p class="instructions">How to play goes here</p>
-                <br>
-                <p>SELECTED NUMBER: <span id="random-result"></span></p>
-                <!-- <p id="random-result"></p>  -->
-         </div>
-<!-- 
-    <div>
-    <p id="random-result"></p>
-    </div> -->
-    
-    <div class="crystals">
+                <div class="num-section"></div>
+                <h2>SELECTED NUMBER: <span id="random-result"></span></h2>
+        </div>
+        <!-- <p id="random-result"></p>  -->
+        <div id="button-section">
+                <button id="win-count" type="button" class="btn btn-primary"># of Win
+                        <span class="badge badge-light"></span>
+                </button>
 
-    </div>
-    <div id="button-container">
+                <button id="lost-count" type="button" class="btn btn-primary"># of Lost
+                        <span class="badge badge-light"></span>
+                </button>
 
-    <button id="previous" type="button" class="btn btn-primary">
-            <span class="badge badge-light"></span>
-    </button>
-   
-    <button id="win-count" type="button" class="btn btn-primary"># of Win
-            <span class="badge badge-light"></span>
-    </button>
+                <button id="previous" type="button" class="btn btn-primary">
+                        <span class="badge badge-light"></span>
+                </button>
 
-    <button id="lost-count" type="button" class="btn btn-primary"># of Lost
-            <span class="badge badge-light"></span>
-    </button>
-    </div>
-  
-<script type="text/javascript" src="assets/javascript/game.js"></script>
+        </div>
 
+
+        <div class="crystals"></div>
+
+
+
+        <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
+
 </html>

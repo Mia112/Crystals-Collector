@@ -8,6 +8,15 @@ var resetAndStart = function (){
 
     $(".crystals").empty();
 
+    var images = [
+        "assets/image/img8.jpg",
+        "assets/image/img1.jpg",
+        "assets/image/img4.jpg",
+        "assets/image/img3.jpg"
+       
+    
+    ]
+    // var imageUrl = "ssets/image/c1.jpg";
   
     // capture our random number shown at the start of the game, between 19 - 120.
     //the math here is: Math.floor(Math.random() * (max - min)) + min
@@ -35,8 +44,15 @@ var resetAndStart = function (){
             "class": 'crystal',
             "num-value": randomNumber
         });
-    
+        crystal.css({
+            "background-image": "url('" + images[i] + "')",
+            "background-size": "cover"
+        });
+        
+        
         $(".crystals").append(crystal);
+
+
    
     }
 
@@ -60,7 +76,7 @@ var resetAndStart = function (){
         
     previous += number;
 
-    $("#previous").html("Total Score: " + previous);
+    $("#previous").html("Your Total: " + previous);
 
     console.log(previous);
     
@@ -68,7 +84,7 @@ var resetAndStart = function (){
         
         lost++
 
-        $("#lost-count").html("You Lost: " + lost);
+        $("#lost-count").html("Lost: " + lost);
         
         previous = 0;
 
@@ -80,7 +96,7 @@ var resetAndStart = function (){
         
         win++;
         
-        $("#win-count").html("You Win: " + win);
+        $("#win-count").html("Win: " + win);
             
         previous = 0;
 

@@ -1,12 +1,81 @@
+body {
+    background-color: black;
+}
+header {
+    text-align: center;
+    color: white;
+}
 .crystals {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+   display: flex; 
+   margin: auto;
+   width: 100%;
+   align-content: center;
+   
 }
 
 .crystal {
-    border: 1px solid rgb(0, 0, 0);
-    height: 150px;
-    width: 150px;
+    background-color: black;
+    height: 350px;
+    width: 100%;
+    
 }
 
+.container {
+   text-align: center;
+   color: white;
+}
+
+#random-result {
+    font-size: 50px;
+}
+#button-section {
+    width: 100%;
+    margin: auto;
+    width: 680px;
+ 
+
+}
+
+#previous {
+    background-color: rgb(0, 0, 0);
+    padding: 5px;
+    margin: 10px;
+    width: 200px;
+    height: 75px;
+    border: none;
+    font-size: 1.5rem;
+}
+
+
+#lost-count {
+    background-color: rgb(0, 0, 0);
+    padding: 5px;
+    margin: 10px;
+    width: 150px;
+    height: 75px;
+    border: none;
+    font-size: 1.5rem;
+}
+
+
+#win-count {
+    background-color: rgb(0, 0, 0);
+    padding: 5px;
+    margin: 10px;
+    width: 150px;
+    height: 75px;
+    border: none;
+    font-size: 1.5rem;
+
+}
+.num-section {
+   
+    background-color: aqua;
+    font-size: 1.5rem; 
+}
+img {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+
+}
