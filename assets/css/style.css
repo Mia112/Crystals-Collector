@@ -3,28 +3,31 @@ body {
 }
 header {
     text-align: center;
-    color: white;
+    color: rgb(204, 203, 203);
 }
 .crystals {
-   display: flex; 
    margin: auto;
-   width: 100%;
-   align-content: center;
+   width: fit-content;
+   
    
 }
 
 .crystal {
     background-color: black;
-    height: 350px;
-    width: 100%;
+    width: 100%; 
+    float: left;
     
 }
 
 .container {
    text-align: center;
-   color: white;
+   color: rgb(204, 204, 204);
+   margin: auto;
 }
-
+.row {
+    display: inline;
+    /* margin: auto; */
+}
 #random-result {
     font-size: 50px;
 }
@@ -68,11 +71,8 @@ header {
     font-size: 1.5rem;
 
 }
-.num-section {
-   
-    background-color: aqua;
-    font-size: 1.5rem; 
-}
+
+
 img {
     width: 200px;
     height: 200px;

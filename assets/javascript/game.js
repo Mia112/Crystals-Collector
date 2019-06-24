@@ -46,7 +46,10 @@ var resetAndStart = function (){
         });
         crystal.css({
             "background-image": "url('" + images[i] + "')",
-            "background-size": "cover"
+            "background-size": "cover",
+            "width": "200px",
+            "height": "200px",
+            "align-content": "center"
         });
         
         
