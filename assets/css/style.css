@@ -1,46 +1,74 @@
 body {
-    background-color: black;
+    background-size: cover;
 }
-header {
+
+
+h1 {
     text-align: center;
-    color: rgb(204, 203, 203);
+    margin: 15px;
+    padding: 10px;
+}
+h2 {
+    text-align: center;
+    margin: 15px;
+    padding: 10px;
+    font-size: 30px;
+}
+
+
+.rule {
+    width: 80%;
+    padding: 25px;
+    background-color: rgb(76, 76, 77);
+    color: rgb(255, 253, 253);
+    border-radius: 10px;
+    margin: auto;
 }
 .crystals {
-   margin: auto;
-   width: fit-content;
-   
-   
+    margin: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+     
 }
 
 .crystal {
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     width: 100%; 
     float: left;
     
 }
-
 .container {
-   text-align: center;
-   color: rgb(204, 204, 204);
-   margin: auto;
+    max-width: 980px;
+    padding: 7px;
+    color: rgb(219, 219, 219);
+    background-color: rgb(0, 0, 0);
+    margin: auto;
+    margin-bottom: 75px;
+    margin-top: 50px;
+    border: 3px solid rgb(255, 254, 254);
+    border-radius: 20px;
+    align-content: center;
 }
+
+.button-section {
+   margin: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 .row {
     display: inline;
-    /* margin: auto; */
-}
-#random-result {
-    font-size: 50px;
-}
-#button-section {
-    width: 100%;
-    margin: auto;
-    width: 680px;
- 
-
+    margin: 20px;
+    /* margin-left: 20px; */
+    padding: 10px; 
+   
 }
 
 #previous {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(171, 11, 211);
+    color: rgb(255, 253, 253);
     padding: 5px;
     margin: 10px;
     width: 200px;
@@ -51,7 +79,8 @@ header {
 
 
 #lost-count {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(171, 11, 211);
+    color: rgb(255, 253, 253);
     padding: 5px;
     margin: 10px;
     width: 150px;
@@ -62,7 +91,8 @@ header {
 
 
 #win-count {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(171, 11, 211);
+    color: rgb(255, 253, 253);
     padding: 5px;
     margin: 10px;
     width: 150px;
@@ -72,10 +102,12 @@ header {
 
 }
 
+.fixed-bottom {
+    background-color: #666666;
+    margin-top: 10px;
+    border-top: 8px solid #5f5e5e;
+    clear: both;
+    height: 25px;
+  
+  }  
 
-img {
-    width: 200px;
-    height: 200px;
-    background-color: black;
-
-}

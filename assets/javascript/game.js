@@ -14,10 +14,8 @@ var resetAndStart = function (){
         "assets/image/img4.jpg",
         "assets/image/img3.jpg"
        
-    
     ]
-    // var imageUrl = "ssets/image/c1.jpg";
-  
+    
     // capture our random number shown at the start of the game, between 19 - 120.
     //the math here is: Math.floor(Math.random() * (max - min)) + min
 
@@ -47,16 +45,14 @@ var resetAndStart = function (){
         crystal.css({
             "background-image": "url('" + images[i] + "')",
             "background-size": "cover",
-            "width": "200px",
-            "height": "200px",
+            "width": "250px",
+            "height": "225px",
             "align-content": "center"
+
         });
-        
         
         $(".crystals").append(crystal);
 
-
-   
     }
 
     $("#previous").html("Your Total: " + previous);

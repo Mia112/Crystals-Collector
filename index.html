@@ -13,21 +13,22 @@
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
-<body>
-        <header>
-                <h1 class="display-4">Crystal-Collector Game</h1>
-
-        </header>
-
+<body background="assets/image/bg3.jpeg">
+        
         <div class="container">
-                <div class="row">
-                        <div class="col-md-3"></div>
-                        <div class="col-md-6">
+                <div class="column">
+                        <div class="row">
+                                
+                        <h1 class="display-4">Crystal-Collector Game</h1>
+
+                        <div class="rule">
+
                                 <h2>Rules of the Game</h2>
                                 <p>
                                         At the start of the game, A random number will display.
                                         There are four crystals below.
-                                        By clicking on a crystal you will add the value of that crystal to your points.
+                                        By clicking on a crystal you will add the value of that crystal to your
+                                        points.
                                 </p>
                                 <p>
                                         You win the game by matching your total points to the ramdom number,
@@ -37,35 +38,35 @@
                                         The value of each crystal is hidden from you until you click on it.
                                         Each time a new game starts, the value of each crystal will change.
                                 </p>
+                        </div>   
+
+                        <h2>MATCH THIS NUMBER: <span id="random-result"></span></h2>
+
+
+                        <div class="button-section">
+                                 <button id="win-count" type="button" class="btn btn-primary"># of Win
+                                        <span class="badge badge-light"></span>
+                                 </button>
+
+                                 <button id="lost-count" type="button" class="btn btn-primary"># of Lost
+                                        <span class="badge badge-light"></span>
+                                 </button>
+
+                                  <button id="previous" type="button" class="btn btn-primary">
+                                        <span class="badge badge-light"></span>
+                                 </button>
+
                         </div>
-                        <div class="col-md-3"></div>
+
+                        <div class="crystals"></div>
+                   
                 </div>
-
-
-        <div class="row">
-                <h2>SELECTED NUMBER: <span id="random-result"></span></h2>
-        </div>
-        </div>
-        <!-- <p id="random-result"></p>  -->
-        <div id="button-section">
-                <button id="win-count" type="button" class="btn btn-primary"># of Win
-                        <span class="badge badge-light"></span>
-                </button>
-
-                <button id="lost-count" type="button" class="btn btn-primary"># of Lost
-                        <span class="badge badge-light"></span>
-                </button>
-
-                <button id="previous" type="button" class="btn btn-primary">
-                        <span class="badge badge-light"></span>
-                </button>
+            
 
         </div>
 
 
-        <div class="crystals"></div>
-
-
+        <div class="fixed-bottom"></div>
 
         <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
